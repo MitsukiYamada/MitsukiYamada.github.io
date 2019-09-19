@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Santa Beauty</title>
-  <meta name="description" content="">
+  <meta name="description" content="Santaはスタイリスト1名、完全予約制のプライベートサロンです。">
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
@@ -33,12 +33,14 @@
       <img class="u-max-full-width logo" src="images/logo.png" alt="logo" srcset="images/logo@2x.png 2x">
     </div>
     <div class="navi-wrap">
+    <div class="container">
       <ul>
         <li><a href="">Recomend</a></li>
         <li><a href="">Products</a></li>
         <li><a href="">Menu</a></li>
         <li><a href="">About</a></li>
       </ul>
+    </div>
     </div>
 </header>
 
@@ -108,7 +110,8 @@
 
 <div id="products">
   <div class="container">
-    <img class="u-max-full-width pro-header" src="images/pro-title.png" alt="title">
+    <img class="u-max-full-width pro-header pro-pc" src="images/pro-title.png" alt="title" srcset="images/pro-title@2x.png 2x">
+    <img class="u-max-full-width pro-header pro-sp" src="images/pro-title-sp.png" alt="title" srcset="images/pro-title-sp@2x.png 2x">
     
     <div class="pro-wrap">
       <div class="pro-inner">
@@ -132,8 +135,6 @@
           <p class="pro-text">ドライヤーの熱から髪のうるおいを守ります。</p>
         </div>
       </div>
-    </div>
-    <div class="pro-wrap">
       <div class="pro-inner">
         <img class="u-max-full-width" src="images/pro-4.jpg" alt="products">
         <div class="name-wrap">
@@ -200,54 +201,10 @@
   </div>
 </div>
 </div>
-<div id="googlemap_area">
-<div class="container">  
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCti-4Bbuc4C26O3Tg8ij_K8CVhNuqFTwo"></script>
-<script type="text/javascript">
-function googleMap() {
-var latlng = new google.maps.LatLng(35.627647,139.776540);/* 座標 */
-var myOptions = {
-zoom: 16, /*拡大比率*/
-center: latlng,
-scrollwheel: false,
-disableDoubleClickZoom: true,
-draggable: false,
-mapTypeControlOptions: { mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP] }
-};
-var map = new google.maps.Map(document.getElementById('map1'), myOptions);
-/*アイコン設定*/
-var icon = new google.maps.MarkerImage('images/top/pin.png',/*画像url*/
-new google.maps.Size(48,56),/*アイコンサイズ*/
-new google.maps.Point(0,0)/*アイコン位置*/
-);
-var markerOptions = {
-position: latlng,
-map: map,
-icon: icon,
-title: 'Santa Beauty',/*タイトル*/
-animation: google.maps.Animation.DROP/*アニメーション*/
-};
-var marker = new google.maps.Marker(markerOptions);
-/*取得スタイルの貼り付け*/
-var styleOptions = [
-{
-"stylers": [
-{ "hue": '#dacab4' }
-]
-}
-];
-var styledMapOptions = { name: 'Santa Beauty' }/*地図右上のタイトル*/
-var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
-map.mapTypes.set('style', sampleType);
-map.setMapTypeId('style');
-};
-google.maps.event.addDomListener(window, 'load', function() {
-googleMap();
-});
-</script>
-<div id="map1" class="gmap" style="width:80%; height:30rem; margin:0 auto;"></div>
-</div>
-</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985267!2d139.76493611511805!3d35.68124053757917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1568894184198!5m2!1sja!2sjp" frameborder="0" allowfullscreen=""></iframe>
+
+
 
 <footer>
   <div class="container footer-wrap"> 

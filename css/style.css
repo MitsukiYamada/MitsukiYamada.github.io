@@ -22,8 +22,7 @@ header {
 .navi-wrap {
   background-color: #e3e8e7; }
   .navi-wrap ul {
-    width: 96rem;
-    margin: 0 auto;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-around; }
     .navi-wrap ul li {
@@ -103,7 +102,7 @@ header {
       background-image: url(../images/bg@2x.jpg);
       height: 60rem; } }
   #recomend .recomend-item {
-    width: 45%;
+    width: 50%;
     text-align: center;
     background-color: white;
     padding-top: 1.5rem;
@@ -129,6 +128,9 @@ header {
       padding-right: 5rem;
       font-size: 1.8rem; }
 
+@media (max-width: 376px) {
+  #recomend .recomend-item {
+    width: 90%; } }
 #items {
   background-image: url(../images/kusa-concept.png);
   background-repeat: no-repeat;
@@ -175,6 +177,11 @@ header {
       position: relative;
       top: 15rem; }
 
+@media (max-width: 376px) {
+  #items {
+    margin-bottom: 5rem; }
+    #items .item-inner {
+      margin-bottom: 0; } }
 #products {
   background-color: #eeeeee;
   padding-top: 8rem;
@@ -187,9 +194,14 @@ header {
     margin-top: 5rem;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     #products .pro-wrap .pro-inner {
-      width: 25%; }
+      box-sizing: border-box;
+      width: 25%;
+      margin-right: 2.5%;
+      margin-left: 2.5%;
+      margin-bottom: 5rem; }
       #products .pro-wrap .pro-inner img {
         width: 100%;
         display: block; }
@@ -206,6 +218,23 @@ header {
           margin-bottom: 0.5rem;
           font-size: 1.2rem; }
 
+@media (max-width: 376px) {
+  #products {
+    padding-bottom: 0; }
+    #products .container {
+      padding-left: 1rem;
+      padding-right: 1rem; }
+      #products .container img.pro-pc {
+        display: none; }
+      #products .container img.pro-sp {
+        padding-bottom: 0; }
+      #products .container .pro-wrap .pro-inner {
+        width: 45%;
+        margin-right: 2.5%;
+        margin-left: 2.5%; } }
+@media (min-width: 768px) {
+  #products img.pro-sp {
+    display: none; } }
 #menu {
   background-image: url(../images/menu-kusa.png);
   background-repeat: no-repeat;
@@ -214,19 +243,23 @@ header {
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     #menu {
       background-image: url(../images/menu-kusa@2x.png);
-      padding: 10rem; } }
+      padding-top: 8rem;
+      padding-bottom: 8rem; } }
   #menu .menu-wrap {
     background-color: #e3e8e7;
-    padding: 5rem 0 3rem 0;
+    padding: 5rem 1.5rem 3rem 1.5rem;
     font-family: "Georgia";
-    text-align: center; }
+    text-align: center;
+    width: 85%;
+    margin: 0 auto; }
     #menu .menu-wrap h1 {
       font-size: 2.5rem;
       background-color: white;
       padding: 0.5rem 0 0.5rem 0; }
     #menu .menu-wrap .menu-inner {
       text-align: left;
-      padding: 4rem 10rem 0 10rem; }
+      padding-top: 4rem;
+      padding-bottom: 10rem; }
       #menu .menu-wrap .menu-inner p {
         font-weight: bold;
         font-size: 1.8rem;
@@ -237,6 +270,12 @@ header {
         #menu .menu-wrap .menu-inner table td {
           padding-left: 5rem; }
 
+@media (max-width: 376px) {
+  #menu {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    #menu .menu-wrap .menu-inner {
+      padding-bottom: 0; } }
 #about {
   background-color: #dacab4;
   text-align: center;
@@ -260,11 +299,22 @@ header {
       　　　letter-spacing: 0.1em;
       word-break: break-all; }
 
-.gmap {
+@media (max-width: 767px) {
+  #about .about-inner {
+    padding: 3rem 2rem 0 2rem; } }
+iframe {
+  width: 60%;
+  height: 45rem;
   border: 1rem solid #e3e8e7;
+  display: block;
+  margin: 0 auto;
   position: relative;
   top: 10rem; }
 
+@media (max-width: 376px) {
+  iframe {
+    width: 80%;
+    height: 20rem; } }
 footer {
   background-color: #b6c2c2;
   padding-top: 15rem; }
@@ -292,5 +342,14 @@ footer {
         padding-left: 10rem; }
     footer .footer-wrap small {
       color: white; }
+
+@media (max-width: 376px) {
+  footer .footer-wrap ul {
+    flex-direction: column; }
+    footer .footer-wrap ul li a {
+      font-size: 2.5rem;
+      padding-bottom: 2rem; }
+  footer .footer-wrap table td {
+    padding-left: 1.5rem; } }
 
 /*# sourceMappingURL=style.css.map */

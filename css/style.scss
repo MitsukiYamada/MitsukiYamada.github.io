@@ -2,6 +2,7 @@
 
 $pc : "(min-width:768px)";
 $sp : "(max-width:767px)";
+$sp2: "(max-width:376px)";
 $green : #b6c2c2;
 $green2 :#e3e8e7;
 $orange :#dab565;
@@ -34,8 +35,7 @@ header{
     background-color: $green2;
 
   ul{
-    width: 96rem;
-    margin: 0 auto;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-around;
     li{
@@ -128,7 +128,7 @@ header{
   height: 60rem;
   }
   .recomend-item{
-    width: 45%;
+    width: 50%;
     text-align: center;
     background-color: white;
     padding-top: 1.5rem;
@@ -158,6 +158,11 @@ header{
       font-size: 1.8rem;
     }
   }
+}
+@media #{$sp2}{
+  #recomend .recomend-item{
+    width: 90%;
+    }
 }
 
 #items{
@@ -213,7 +218,14 @@ header{
     }
 } 
 }
-
+@media #{$sp2}{
+  #items{
+    margin-bottom: 5rem;
+    .item-inner{
+    margin-bottom: 0;
+  }
+  }
+}
 #products{
   background-color: #eeeeee;
     padding-top: 8rem;
@@ -221,7 +233,6 @@ header{
   img.pro-header{
     display: block;
     margin: 0 auto;
-
     padding-bottom: 3rem;
   }
  .pro-wrap{
@@ -229,8 +240,13 @@ header{
    margin-bottom: 2rem;
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
  .pro-inner{
+   box-sizing: border-box;
    width: 25%;
+   margin-right: 2.5%;
+   margin-left: 2.5%;
+   margin-bottom: 5rem;
    img{
      width: 100%;
      display: block;
@@ -253,6 +269,34 @@ header{
  }
  }
 }
+@media #{$sp2}{
+  #products{
+    padding-bottom: 0;
+    .container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    img.pro-pc{
+    display: none;
+  }
+    img.pro-sp{
+    padding-bottom: 0;
+  }
+  .pro-wrap .pro-inner{
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+  }  
+}
+}
+
+@media #{$pc}{
+  #products img.pro-sp{
+    display: none;
+  }
+}
+
+
 #menu{
   background-image: url(../images/menu-kusa.png);
   background-repeat: no-repeat;
@@ -260,13 +304,16 @@ header{
   background-size: cover;
   @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
   background-image: url(../images/menu-kusa@2x.png);
-  padding: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .menu-wrap{
   background-color: $green2;
-  padding: 5rem 0 3rem 0;
+  padding: 5rem 1.5rem 3rem 1.5rem;
   font-family: "Georgia";
   text-align: center;
+  width: 85%;
+  margin: 0 auto;
   h1{
     font-size: 2.5rem;
     background-color: white;
@@ -274,7 +321,8 @@ header{
   }
   .menu-inner{
     text-align: left;
-    padding: 4rem 10rem 0 10rem;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
     p{
       font-weight: bold;
       font-size: 1.8rem;
@@ -290,7 +338,15 @@ header{
   }
 }
 }
-
+@media #{$sp2}{
+  #menu{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .menu-wrap .menu-inner{
+      padding-bottom: 0;
+    }
+  }
+}
 #about{
   background-color: $beige;
   text-align: center;
@@ -318,10 +374,26 @@ header{
     }
   }
 }
-.gmap{
+@media #{$sp}{
+  #about .about-inner{
+    padding: 3rem 2rem 0 2rem;
+  }
+}
+
+iframe{
+  width: 60%;
+  height: 45rem;
   border: 1rem solid $green2;
+  display: block;
+  margin: 0 auto;
   position: relative;
   top: 10rem;
+}
+@media #{$sp2}{
+  iframe{
+    width: 80%;
+    height: 20rem;
+  }
 }
 
 footer{
@@ -329,7 +401,6 @@ footer{
   padding-top: 15rem;
   .footer-wrap{
     text-align: center;
-    
     ul{
     display: flex;
     justify-content: space-around;
@@ -360,5 +431,25 @@ footer{
   small{
     color: white;
   }
+  }
+}
+
+
+@media #{$sp2}{
+  footer .footer-wrap{
+    
+   ul{
+    flex-direction: column;
+    li a{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+      }
+   }
+    table{
+      td{
+        padding-left: 1.5rem;
+      }
+    }
+
 }
 }
