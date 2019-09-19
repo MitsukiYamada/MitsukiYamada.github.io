@@ -1,0 +1,296 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: "Georgia", "Times New Roman", "ＭＳ Ｐ明朝", "游明朝体", "ヒラギノ明朝 ProN", serif; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+header {
+  border-top: 2rem solid #b6c2c2;
+  padding-top: 2rem;
+  text-align: center; }
+  header img.logo {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    padding-top: 1rem; }
+
+.navi-wrap {
+  background-color: #e3e8e7; }
+  .navi-wrap ul {
+    width: 96rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    .navi-wrap ul li {
+      margin-top: 1rem; }
+      .navi-wrap ul li a {
+        color: black;
+        font-family: "Georgia";
+        font-size: 1.5rem;
+        font-weight: bold; }
+        .navi-wrap ul li a:hover {
+          color: #dab565; }
+
+#top {
+  background-image: url(../images/top.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 55rem;
+  text-align: center; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #top {
+      background-image: url(../images/top@2x.jpg); } }
+  #top .top-inner {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 20rem;
+    box-shadow: 0 0 8rem #eee; }
+    #top .top-inner .top-title1 {
+      color: #b6c2c2;
+      font-family: "Georgia";
+      font-size: 3rem;
+      margin-bottom: 0.5rem; }
+    #top .top-inner .top-title2 {
+      font-size: 1.2rem;
+      margin-bottom: 0; }
+
+#concept {
+  background-image: url(../images/kusa-concept.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #concept {
+      background-image: url(../images/kusa-concept@2x.png); } }
+  #concept .concept-wrap {
+    padding-top: 7rem;
+    padding-bottom: 7rem; }
+    #concept .concept-wrap p.concept1 {
+      font-size: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: inline-block;
+      border-bottom: 0.5rem solid #dab565;
+      padding-bottom: 1rem; }
+    #concept .concept-wrap .concept2-wrap {
+      width: 65%;
+      margin: 0 auto; }
+      #concept .concept-wrap .concept2-wrap p {
+        color: #b6c2c2;
+        line-height: 2em;
+        margin-top: 3rem;
+        letter-spacing: 0.1em;
+        font-size: 1.5rem; }
+
+#recomend {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #recomend {
+      background-image: url(../images/bg@2x.jpg);
+      height: 60rem; } }
+  #recomend .recomend-item {
+    width: 45%;
+    text-align: center;
+    background-color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 6rem;
+    box-shadow: 2rem 2rem 0.5rem #dacab4;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    #recomend .recomend-item .recomendsub-title {
+      font-size: 1.2rem;
+      margin-bottom: 0; }
+    #recomend .recomend-item .recomend-title {
+      color: #b6c2c2;
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem; }
+    #recomend .recomend-item .recomend-text {
+      font-size: 1.4rem; }
+    #recomend .recomend-item button {
+      background-color: #dab565;
+      color: white;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      font-size: 1.8rem; }
+
+#items {
+  background-image: url(../images/kusa-concept.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #items {
+      background-image: url(../images/kusa-concept@2x.png);
+      padding-top: 6rem; } }
+  #items h2 {
+    font-size: 2.5rem;
+    font-family: "Georgia";
+    background-color: #b6c2c2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    letter-spacing: 0.1em; }
+  #items .item-inner {
+    margin-bottom: 4rem; }
+    #items .item-inner img.item-img {
+      display: block;
+      margin: 0 auto; }
+    #items .item-inner .pro-tag {
+      background-color: #b6c2c2;
+      color: white;
+      width: 15rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+      Z-index: 10; }
+      #items .item-inner .pro-tag h3 {
+        font-size: 2.8rem;
+        font-family: "Georgia";
+        margin-bottom: 0.5rem;
+        font-style: italic; }
+      #items .item-inner .pro-tag p {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        color: black; }
+    #items .item-inner .pro-tag1, #items .item-inner .pro-tag2, #items .item-inner .pro-tag3 {
+      position: relative;
+      top: 15rem; }
+
+#products {
+  background-color: #eeeeee;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  #products img.pro-header {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 3rem; }
+  #products .pro-wrap {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between; }
+    #products .pro-wrap .pro-inner {
+      width: 25%; }
+      #products .pro-wrap .pro-inner img {
+        width: 100%;
+        display: block; }
+      #products .pro-wrap .pro-inner .name-wrap {
+        background-color: white;
+        text-align: center;
+        padding: 1rem; }
+        #products .pro-wrap .pro-inner .name-wrap .pro-name {
+          font-weight: bold;
+          font-size: 2rem;
+          font-family: "Georgia";
+          margin-bottom: 0.5rem; }
+        #products .pro-wrap .pro-inner .name-wrap .pro-text {
+          margin-bottom: 0.5rem;
+          font-size: 1.2rem; }
+
+#menu {
+  background-image: url(../images/menu-kusa.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    #menu {
+      background-image: url(../images/menu-kusa@2x.png);
+      padding: 10rem; } }
+  #menu .menu-wrap {
+    background-color: #e3e8e7;
+    padding: 5rem 0 3rem 0;
+    font-family: "Georgia";
+    text-align: center; }
+    #menu .menu-wrap h1 {
+      font-size: 2.5rem;
+      background-color: white;
+      padding: 0.5rem 0 0.5rem 0; }
+    #menu .menu-wrap .menu-inner {
+      text-align: left;
+      padding: 4rem 10rem 0 10rem; }
+      #menu .menu-wrap .menu-inner p {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 0.5rem solid white; }
+      #menu .menu-wrap .menu-inner table {
+        margin-bottom: 5rem; }
+        #menu .menu-wrap .menu-inner table td {
+          padding-left: 5rem; }
+
+#about {
+  background-color: #dacab4;
+  text-align: center;
+  padding-bottom: 8rem; }
+  #about h1 {
+    font-family: "Georgia";
+    font-size: 3rem;
+    padding: 5rem 5rem 0.5rem 5rem;
+    border-bottom: 0.6rem double #F3EFE9;
+    display: inline-block;
+    margin-bottom: 5rem; }
+  #about .about-inner {
+    padding: 8rem;
+    border-right: 0.6rem double #F3EFE9; }
+    #about .about-inner p.myname {
+      font-family: "Georgia";
+      font-weight: bold;
+      font-size: 2rem; }
+    #about .about-inner p {
+      　　　line-height: 0.8rem;
+      　　　letter-spacing: 0.1em;
+      word-break: break-all; }
+
+.gmap {
+  border: 1rem solid #e3e8e7;
+  position: relative;
+  top: 10rem; }
+
+footer {
+  background-color: #b6c2c2;
+  padding-top: 15rem; }
+  footer .footer-wrap {
+    text-align: center; }
+    footer .footer-wrap ul {
+      display: flex;
+      justify-content: space-around; }
+      footer .footer-wrap ul li {
+        margin-top: 1rem; }
+        footer .footer-wrap ul li a {
+          color: black;
+          font-family: "Georgia";
+          font-size: 1.5rem;
+          font-weight: bold; }
+          footer .footer-wrap ul li a:hover {
+            color: #dab565; }
+    footer .footer-wrap table {
+      font-family: "Georgia";
+      margin: 0 auto;
+      color: white;
+      margin-top: 8rem;
+      margin-bottom: 8rem; }
+      footer .footer-wrap table td {
+        padding-left: 10rem; }
+    footer .footer-wrap small {
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */

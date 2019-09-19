@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+$pc : "(min-width:768px)";
+$sp : "(max-width:767px)";
+$green : #b6c2c2;
+$green2 :#e3e8e7;
+$orange :#dab565;
+$beige :#dacab4;
+
+// ::
+html {
+  font-size: 62.5%;
+  font-family: "Georgia", "Times New Roman", "ＭＳ Ｐ明朝", "游明朝体", "ヒラギノ明朝 ProN", serif;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+// header
+header{
+  border-top: 2rem solid $green;
+  padding-top: 2rem;
+  text-align: center;
+  img.logo{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+  }
+}
+  .navi-wrap{
+    background-color: $green2;
+
+  ul{
+    width: 96rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    li{
+      margin-top: 1rem;
+      a{
+        color: black;
+        font-family: "Georgia";
+        font-size: 1.5rem;
+        font-weight: bold;
+        &:hover{
+        color: $orange;
+        }
+        }
+      }
+    }
+  }
+
+#top{
+  background-image: url(../images/top.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 55rem;
+  text-align: center;
+  @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+  background-image: url(../images/top@2x.jpg);
+  }
+   .top-inner{
+     background-color: white;
+     display: inline-block;
+     text-align: center;
+     padding: 1rem 2rem 1rem 2rem;
+     margin-top: 20rem;
+     box-shadow: 0 0 8rem #eee;
+     .top-title1{
+       color: $green;
+       font-family: "Georgia";
+       font-size: 3rem;
+       margin-bottom: 0.5rem;
+     }
+     .top-title2{
+       font-size: 1.2rem;
+       margin-bottom: 0;
+     }
+   }
+}
+#concept{
+  background-image: url(../images/kusa-concept.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+  background-image: url(../images/kusa-concept@2x.png);
+  }
+  text-align: center;
+  .concept-wrap{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    p.concept1{
+      font-size: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: inline-block;
+      border-bottom: 0.5rem solid $orange;
+      padding-bottom: 1rem;
+    }
+    .concept2-wrap{
+        width: 65%;
+        margin: 0 auto;
+        p{
+          color: $green;
+          line-height: 2em;
+          margin-top: 3rem;
+          letter-spacing: 0.1em;
+          font-size: 1.5rem;
+        }
+      }
+  }
+}
+
+#recomend{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+  background-image: url(../images/bg@2x.jpg);
+  height: 60rem;
+  }
+  .recomend-item{
+    width: 45%;
+    text-align: center;
+    background-color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 6rem;
+    box-shadow: 2rem 2rem 0.5rem $beige;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    .recomendsub-title{
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+    .recomend-title{
+      color: $green;
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    .recomend-text{
+      font-size: 1.4rem;
+    }
+    button{
+      background-color: $orange;
+      color: white;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+#items{
+  background-image: url(../images/kusa-concept.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+  background-image: url(../images/kusa-concept@2x.png);
+  padding-top: 6rem;
+  }
+   h2{
+     font-size: 2.5rem;
+     font-family: "Georgia";
+     background-color: $green;
+     padding-top: 1rem;
+     padding-bottom: 1rem ;
+     text-align: center;
+     margin-bottom: 0;
+     color: white;
+     letter-spacing: 0.1em;
+   }
+  .item-inner{
+   margin-bottom: 4rem;
+   img.item-img{
+     display: block;
+     margin: 0 auto;
+   }
+  .pro-tag{
+    background-color: $green;
+    color: white;
+    width: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    Z-index: 10;
+    h3{
+      font-size: 2.8rem;
+      font-family: "Georgia";
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+    p{
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      color: black;
+    }
+}
+    .pro-tag1,.pro-tag2,.pro-tag3{
+      position: relative;
+      top: 15rem;
+    }
+} 
+}
+
+#products{
+  background-color: #eeeeee;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  img.pro-header{
+    display: block;
+    margin: 0 auto;
+
+    padding-bottom: 3rem;
+  }
+ .pro-wrap{
+   margin-top: 5rem;
+   margin-bottom: 2rem;
+   display: flex;
+   justify-content: space-between;
+ .pro-inner{
+   width: 25%;
+   img{
+     width: 100%;
+     display: block;
+   }
+ .name-wrap{
+   background-color: white;
+   text-align: center;
+   padding: 1rem;
+    .pro-name{
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: "Georgia";
+      margin-bottom: 0.5rem;
+    }
+    .pro-text{
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+ }
+ }
+ }
+}
+#menu{
+  background-image: url(../images/menu-kusa.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
+  background-image: url(../images/menu-kusa@2x.png);
+  padding: 10rem;
+}
+.menu-wrap{
+  background-color: $green2;
+  padding: 5rem 0 3rem 0;
+  font-family: "Georgia";
+  text-align: center;
+  h1{
+    font-size: 2.5rem;
+    background-color: white;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .menu-inner{
+    text-align: left;
+    padding: 4rem 10rem 0 10rem;
+    p{
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+      border-bottom: 0.5rem solid white;
+    }
+    table{
+      margin-bottom: 5rem;
+      td{
+        padding-left: 5rem;
+      }
+    }
+  }
+}
+}
+
+#about{
+  background-color: $beige;
+  text-align: center;
+  padding-bottom: 8rem;
+  h1{
+    font-family: "Georgia";
+    font-size: 3rem;
+    padding: 5rem 5rem 0.5rem 5rem;
+    border-bottom: 0.6rem double #F3EFE9;
+    display: inline-block;
+    margin-bottom: 5rem;
+  }  
+  .about-inner{
+    padding: 8rem;
+    border-right: 0.6rem double #F3EFE9;
+    p.myname{
+     font-family: "Georgia"; 
+     font-weight: bold;
+     font-size: 2rem;
+    }
+    p{
+　　　line-height: 0.8rem;
+　　　letter-spacing: 0.1em;
+      word-break: break-all;
+    }
+  }
+}
+.gmap{
+  border: 1rem solid $green2;
+  position: relative;
+  top: 10rem;
+}
+
+footer{
+  background-color: $green;
+  padding-top: 15rem;
+  .footer-wrap{
+    text-align: center;
+    
+    ul{
+    display: flex;
+    justify-content: space-around;
+    li{
+      margin-top: 1rem;
+      a{
+        color: black;
+        font-family: "Georgia";
+        font-size: 1.5rem;
+        font-weight: bold;
+        &:hover{
+        color: $orange;
+        }
+        }
+    }
+    
+  }
+  table{
+    font-family: "Georgia"; 
+    margin: 0 auto;
+    color: white;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    td{
+      padding-left: 10rem;
+    }
+  }
+  small{
+    color: white;
+  }
+}
+}
